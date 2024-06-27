@@ -71,7 +71,7 @@ body {
     /* trên dưới 8px trái phải 21px */
   }
   .nav a:hover {
-    color: #5f5b53;
+    color: #3f3c36;
     text-shadow: 1px 0 0 currentColor;
   }
   .nav li.active a::after {
