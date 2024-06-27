@@ -7,4 +7,77 @@ html {
 /* Khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  /* commmon */
+  a{
+    text-decoration: none;
+  }
+  .main-content{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+  }
+  .btn{
+    color: #FFF;
+    min-width: 118px;
+font-size: 16px;
+font-weight: 600;
+border-radius: 24.5px;
+background: #171100;
+display: inline-block;
+padding: 0px 16px;
+line-height: 50px;
+text-align: center;
+  }
+  .header .btn-sign-up{
+    min-width: 144px;
+  }
+  /* dùng max-width để khi co web lại vẫn k bị sát lề */
+  /* header */
+  .header{
+    background: #FFFCF4;
+  }
+  .header.fixed{
+   position: sticky; 
+   top: -28px;
+  }
+  /* stickey để cố định phần header lại phía đầu trang khi cuộn */
+  .header .body{
+    display: flex;
+    align-items: center;
+     padding: 36px 0 8px;
+  }
+  /* .header .body nghĩa là tác động vào class body là con của class header */
+  .nav ul{
+    display: flex;
+  }
+  .nav{
+    margin-left: auto;
+  }
+  .nav a{
+    color: #5F5B53;
+font-size: 1.6rem;
+padding: 8px 21px;
+position: relative;
+/* trên dưới 8px trái phải 21px */
+  }
+  .nav a:hover{
+    color: #5F5B53;
+    text-shadow: 1px 0 0 currentColor;
+  }
+  .nav li.active a::after{
+    content:"";
+    border-radius: 1px;
+    background: #171100;
+   width: 12px;
+   height: 2px;
+   flex-shrink: 0;
+   display: block;
+   position: absolute;
+   left: 21px;
+   bottom: 6px;
+  }
+.header .action{
+  margin-left: 49px;
 }
